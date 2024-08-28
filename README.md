@@ -29,35 +29,67 @@
   ##5. 프로젝트 구조
 
 ┗📂TASK1-Webpage
+
   ┣ 📂.idea
+  
   ┃ ┣ 📜.gitignore
+  
   ┃ ┣ 📜misc.html
+  
   ┃ ┣ 📜modules.html
+  
   ┃ ┣ 📜vcs.html
+  
   ┃ ┗ 📜workspace.html
+  
   ┣ 📂css
+  
   ┃ ┗ 📜style.css
+  
   ┣ 📂img
+  
   ┣ ┗ 📜 imges
+  
   ┣ 📂js
+  
   ┃  ┣ 📂vendor
+  
   ┃  ┃  ┗📜.gitkeep
+  
   ┃  ┗ 📜 app.js
+  
   ┣ 📜.editorconfig
+  
   ┣ 📜.gitatributes
+  
   ┣ 📜.gitognore
+  
   ┣ 📜 404.html
+  
   ┣ 📜 favicon.ico
+  
   ┣ 📜 icon.png
+  
   ┣ 📜 icon.html
+  
   ┣ 📜 icon.index
+  
   ┣ 📜 license.txt
+  
   ┣ 📜 package.txt
+  
   ┣ 📜 robots.txt
+  
   ┣ 📜 site.webmanifest
+  
   ┣ 📜 TASK1.html  // 메인 화면
+  
   ┣ 📜 TASK1_script.js  //메인 자바스크립트 문서
+  
   ┣ 📜 TASK1_sytle.css  //메인 스타일 문서
+  
   ┣ 📜 webpack.common
+  
   ┣ 📜 webpack.config.dev
+  
   ┗ 📜 webpack.config.prod
