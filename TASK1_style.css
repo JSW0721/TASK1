@@ -10,7 +10,9 @@
   font-family: Pretendard, sans-serif;
   font-size: 16px;
 }
-
+.navi-mobile{
+  display: flex;
+}
 .navi-a{
   display: flex;
   justify-content: space-around;
@@ -374,12 +376,20 @@ footer{
 }
 /* 모달 CSS */
 .modal {
-  display: none; /* 처음에는 안보이게 */
-  z-index: 1000; /* 다른 요소들보다 위에 표시되도록 높은 값 설정 */
-  position: fixed; /* 화면에 고정 */
-  width: 100vw;
-  height: 100vw;
+  display: none; /* 우선은 숨긴다 */
   background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+
+  /* 화면에 꽉 차게 설정 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
   }
 .modal-content {
   width: 600px;
@@ -391,7 +401,6 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
 }
 #sub-cat{
   width: 110px;
