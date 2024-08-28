@@ -15,7 +15,10 @@ document.querySelector(".form").addEventListener("submit", function(event) {
   if(emailInput === ""){
     event.preventDefault();
     alert("빈칸으로 두지 마세요.");
-  }// 이메일 형식이 아니면
+  } else if(!emailInput.includes("@")){
+    event.preventDefault();
+    alert("단순 문자열이 아닌 올바른 이메일 주소를 넣어주세요")
+  } // 이메일 형식이 아니면
   else if (!emailPattern.test(emailInput)) {
     event.preventDefault();  // 폼 제출을 막음
     alert("올바른 이메일 주소를 넣어주세요.");  // 경고창 표시
