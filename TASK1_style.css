@@ -499,7 +499,8 @@ footer{
     font-size: 16px;
     line-height: 20px;
   }
-  #close-tab{
+  .close-tab{
+    display: flex;
     width: 32px;
     height: 32px;
   }

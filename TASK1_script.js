@@ -53,10 +53,10 @@ scrollup.addEventListener("click", function() {
 
 //모바일 버전 메뉴 열고 닫기
 function toggleMenu() {
-  var menu = document.getElementById('mobile-menu');
+  const menu = document.getElementById('mobile-menu');
   menu.classList.toggle('open');
 }
 function closeTab() {
-  var menu = document.getElementById('mobile-menu');
+  const menu = document.getElementById('mobile-menu');
   menu.classList.remove('open');
 }
