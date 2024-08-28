@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASK1-정승원</title>
+  <link rel="stylesheet" href="TASK1_style.css">
+</head>
+<body>
+<header>
+  <div class="navi-bar">
+    <img src="./img/HODU_logo.png" alt="hodu-logo" class="head-logo">
+    <div class="m-menu-btn" onclick="toggleMenu()">
+      <img src="./img/m-menu.png" alt="mobile menu button" id="m-menu">
+    </div>
+    <div class="navi-mobile" id="mobile-menu">
+      <div class="close-tab" onclick="closeTab()">
+        <img src="./img/tab-close.png" alt="close tab button" id="close-tab">
+      </div>
+      <a href="" class="a-href">Home</a>
+      <a href="" class="a-href">About</a>
+      <a href="" class="a-href">Support</a>
+      <div class="download-navi">Download</div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="header-text">
+      <h1 id="head1">Lorem ipsum is simply<br/>dummy text
+of the printing and</h1>
+      <p id="head2">Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/>
+        Lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
+      <div class="download">Download</div>
+    </div>
+    <img src="./img/cat_inthe_box.png" alt="cat_box" id="cat-box"/>
+  </div>
+</header>
+<!-- 헤더로 너무 크게 묶은거 아닌가? -->
+
+<!-- 누워 있는 고양이 구역 -->
+<div class="div1">
+  <img src="./img/lyingcat.png" alt="lying-cat" class="lying-cat"/>
+  <div>
+  <p class="div1-1">Lorem ipsum is simply dummy text of the printing and dummy text</p>
+  <p class="div1-2">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div>
+</div>
+<div class="div2">
+  <p class="div2-1">dummy text of the printing and dummy</p>
+  <p class="div2-2">Lorem ipsum is simply <span id="colorchange">dummy text</span> of the printing and typesetting industry.<br/>
+    lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown</p>
+</div>
+
+<!-- 고양이 사진 구역-->
+<div class="div-img">
+  <div class="img-set">
+    <img src="./img/cat_on_tower.png" alt="cat on the cat tower" class="img-style">
+    <img src="./img/cat_back.png" alt="back" class="img-style">
+    <img src="./img/gazingcat_far.png" alt="gazing-f" class="img-style">
+  </div>
+  <div class="img-set">
+    <img src="./img/gazingcat_close.png" alt="gazing-c" class="img-style">
+    <img src="./img/gazingcat_middle.png" alt="gazing-m" class="img-style">
+    <img src="./img/yawningcat.png" alt="yawn" class="img-style">
+  </div>
+</div>
+<div class="div3">
+  <p id="div3-1">Continue exploring HODU</p>
+  <button type="button" id="div3-2">Show more</button>
+</div>
+
+<!-- 주소와 지도 -->
+<div class="px1"></div>
+<div class="address">
+  <p id="where">Where you’ll be</p>
+  <p id="address">330, Cheomdan-ro, Jeju-si, Jeju-do,
+Republic of Korea</p>
+  <img src="./img/map.png" alt="jejumap" class="map">
+</div>
+
+<!-- 구독 -->
+<div class="subscribe">
+  <div class="sub-text">
+    <p id="ss1">Subscribe to our
+Blog post</p>
+    <p id="ss2">Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/>
+      lorem ipsum has been the industry's standard dummy text</p>
+  </div>
+    <form action="/submit" method="post" class="form">
+      <label for="email" id="label"><img src="./img/mail.png" alt="mail"></label>
+      <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
+      <button type="submit" class="sub-btn">Subscribe</button>
+    </form>
+</div>
+<!-- 지도 구역이랑 붙고 구독div가 이 접선 위애 올라와야 하는데 어렵네. -->
+<!-- 08/28 subscribe 밑으로 집어넣는건 어떻게 했는데 풋터랑 간격 차이나네.-->
+<div class="frame">
+  <img src="img/hodu_under.png" alt="cat" id="cat-under"/>
+</div>
+<div id="scrollup">
+  <img src="./img/hover.png" alt="tap to top" id="hover">
+</div>
+<footer>
+  <div class="footer-group">
+  <div>
+    <img src="./img/HODU-logo_foot.png" alt="hodu logo footer" class="hodu-foot">
+  </div>
+  <div class="footer-logo">
+    <img src="./img/icon-blog.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-instagram.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-facebook.png" alt="hodu logo footer" class="logo">
+    <img src="./img/icon-utube.png" alt="hodu logo footer" class="logo">
+  </div>
+  </div>
+  <div class="footer-menu-group">
+    <a href="javascript:void(0);">About</a>
+    <a href="javascript:void(0);">Blog</a>
+    <a href="javascript:void(0);">Support</a>
+    <a href="javascript:void(0);">Terms of Use</a>
+  </div>
+</footer>
+
+<!-- 모달 -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <img src="./img/sub-cat.png" alt="shy hodu" id="sub-cat"/>
+    <p id="ms1">Thank you</p>
+    <p id="ms2">Lorem Ipsum is siply dummy text of the printing industry.</p>
+    <div class="modal-close-btn">OK! I Love HODU</div>
+  </div>
+</div>
+
+<script src="TASK1_script.js">
+  //DOM의 로딩이 끝날 때까지 기다리기 위해 스크립트를 body 끝에 위치.
+</script>
+</body>
+</html>
