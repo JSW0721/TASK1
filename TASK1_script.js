@@ -2,6 +2,10 @@ const modal = document.getElementById("modal"); //불러올 파라메터 모달 
 const openModalBtn = document.querySelector(".sub-btn");//모달을 불러올 오픈모달버튼 파라메터 정의
 const closeModalBtn = document.querySelector(".modal-close-btn");//모달을 닫을 클로즈모달버튼 파라메터 정의
 
+openModalBtn.addEventListener('click',function(){
+  modal.style.display="block";//모달여는 이벤트 리스너를 생성만 해놓되 실행을 하진 않겠다.
+});
+
 document.querySelector(".form").addEventListener("submit", function(event) {
   // 이메일 입력 필드 선택
   const emailInput = document.getElementById("email").value;
@@ -15,9 +19,8 @@ document.querySelector(".form").addEventListener("submit", function(event) {
     alert("올바른 이메일 주소를 넣어주세요.");  // 경고창 표시
   } else {
     event.preventDefault();  // 폼 제출 막고 모달 열기
-    openModalBtn.addEventListener('click', function() {
-      modal.style.display = "block";
-    });
+    modal.style.display = "block";
+
   }
 });
 
