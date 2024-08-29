@@ -26,8 +26,8 @@
      
      -서비스 배포 환경 : Github pages
      
-     -배포 URL : <https://jsw0721.github.io/TASK1/TASK1-Webpage/TASK1.htm>
-
+     -배포 URL : https://jsw0721.github.io/TASK1/TASK1-Webpage/TASK1.html
+     
      -배포 레포지토리 : <https://github.com/JSW0721/TASK1>
 
 ---
