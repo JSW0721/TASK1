@@ -463,7 +463,7 @@ footer{
   display: none;
 }
 /*여기서 부터는 모바일 화면*/
-@media (max-width: 400px){
+@media (max-width: 780px){
   body{
     display: flex;
     flex-direction: column;
